@@ -12,335 +12,467 @@
 
 <body>
   <style>
-    @media (min-width: 479px) {  
-    .container-fluid{
-      width: 100%;
-    }
-    .navbar{
-    font-size: 1.5em;
-    }
-    .container{
-      padding: 1.0em;
-      margin:1.5em;
-    }
-    h2{
-      font-size:3.5em;
-      padding-top: 0.7em;
-      font-weight: bold;
-    }
-    h3{
-      font-size:2.5em;
-      padding-top: 0.5em;
-      font-weight: bold;
-    }
-    h4{
-      font-size:2em;
-      padding-top: 0.3em;
-    }
-    p{
-      font-size: 1.5em;
-      padding-top: 0.1em;
-    }
-    #jum{
-      background-color: rgb(124, 124, 207);
-      margin: 1.5em;
-    }
-  }
+    @media (min-width: 481px) {
+      .container-fluid {
+        width: 100%;
+      }
 
-  @media (max-width: 480px) {
-    .navbar{
-    font-size: 4.0em;
-    }
-    .container-fluid{
-      width: 100%;
-    }
-    .container{
-      padding-top: 0.5em;
-      margin:1.5em;
-    }
-    h2{
-      font-size:6em;
-      padding-top: 0.2em;
-      font-weight: bold;
-    }
-    h3{
-      font-size:5em;
-      padding-top: 0.5em;
-      font-weight: bold;
-    }
-    h4{
-      font-size:4.5em;
-      padding-top: 0.3em;
-    }
-    p{
-      font-size: 4em;
-      padding-top: 0.1em;
-    }
-    #jum{
-      background-color: rgb(186, 186, 192);
-      margin: 1.5em;
-    }
-  }
-  
+      .navbar {
+        font-size: 1.5em;
+      }
 
-    
+      .container {
+        padding: 1.0em;
+        margin: 1.5em;
+      }
 
+      h2 {
+        font-size: 3.5em;
+        padding-top: 0.7em;
+        font-weight: bold;
+      }
+
+      h3 {
+        font-size: 2.5em;
+        padding-top: 0.5em;
+        font-weight: bold;
+      }
+
+      h4 {
+        font-size: 2em;
+        padding-top: 0.5em;
+      }
+
+      p {
+        font-size: 1.5em;
+        padding-top: 0.1em;
+      }
+
+      ol {
+        font-size: 1.5em;
+        padding-top: 0.1em;
+      }
+
+      #jum {
+        background-color: rgb(124, 124, 207);
+        margin: 1.5em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .navbar {
+        font-size: 4.0em;
+      }
+
+      .container-fluid {
+        width: 100%;
+      }
+
+      .container {
+        padding-top: 0.5em;
+        margin: 1.5em;
+      }
+
+      h2 {
+        font-size: 6em;
+        padding-top: 0.2em;
+        font-weight: bold;
+      }
+
+      h3 {
+        font-size: 5em;
+        padding-top: 0.5em;
+        font-weight: bold;
+      }
+
+      h4 {
+        font-size: 4.5em;
+        padding-top: 0.3em;
+      }
+
+      p {
+        font-size: 4em;
+        padding-top: 0.1em;
+      }
+
+      ol {
+        font-size: 4em;
+        padding-top: 0.1em;
+      }
+
+      #jum {
+        background-color: rgb(186, 186, 192);
+        margin: 1.5em;
+      }
+    }
   </style>
 
   <!-- DOCUMENTATION NAVBAR -->
 
   <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-    <div class ="row">
-      <div class = "col-xs-12 col-sm-12">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
 
-    <!-- Inside of a Container -->
-    <div class="container-fluid">
+        <!-- Inside of a Container -->
+        <div class="container-fluid">
 
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <!-- This is the actual code that create the "hamburger icon" -->
-      <!-- The data-target grabs ids to put into the icon -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-          data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <!--  Code for the hamburger icon-->
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Guía</a>
-      </div>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <!-- This is the actual code that create the "hamburger icon" -->
+          <!-- The data-target grabs ids to put into the icon -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <!--  Code for the hamburger icon-->
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Guía</a>
+          </div>
 
-      
 
-      <!-- Anything inside of collapse navbar-collapse goes into the "hamburger" -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-              aria-expanded="false">Ir a: <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Intro Peregrinación</a></li>
-              <li><a href="http://www.google.com">Rosario</a></li>
-              <li><a href="#">Cantar</a></li>
+
+          <!-- Anything inside of collapse navbar-collapse goes into the "hamburger" -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">Ir a: <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Intro Peregrinación</a></li>
+                  <li><a href="http://www.google.com">Rosario</a></li>
+                  <li><a href="#">Cantar</a></li>
+                </ul>
+              </li>
             </ul>
-          </li>
-        </ul>
 
-        <!-- Stuff on the Right -->
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Inicio</a></li>
-        </ul>
+            <!-- Stuff on the Right -->
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Inicio</a></li>
+            </ul>
 
-      </div><!-- /.navbar-collapse -->
-    </div> <!-- <div class = "col-xs-12 col-sm-12"> -->
-  </div><!-- <div class = "row"> -->
+          </div><!-- /.navbar-collapse -->
+        </div> <!-- <div class = "col-xs-12 col-sm-12"> -->
+      </div><!-- <div class = "row"> -->
     </div><!-- /.container-fluid -->
   </nav>
 
 
   <!-- OTHER STUFF ON THE PAGE -->
-  <div class ="row">
-  <div class = "col-xs-12 col-sm-12">
-  <div class="container" id="jum">
-      <h2>Mini-peregrinación Enero 2022</h2>
-      <h3>Amigos:</h3>
-      <p class="inju">Vamos en peregrinación a ver a Nuestra Señora en el Santuario del Pueblito. Queremos ir con espíritu de oración
-        para pedirle que nos lleve más cerca de Dios y enriquezca nuestras vidas. </p>
-      <p class="inju">Una peregrinación puede cambiar el rumbo de nuestras vidas. Si tenemos alguna petición, alguien que queremos en
-        comendar, algún sufrimiento que ofrecer o simplemente dar gracias por algun bien queremos poner ésto ante Dios a
-        traves de la devoción a Santa María del Pueblito.</p>
-      <p class="inju">"Santa María, Madre de Dios, ruega por nosotros pecadores, ahora y en la hora de nuestra muerte. Amén"</p>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+      <div class="container" id="jum">
+        <h2>Mini-peregrinación Enero 2022</h2>
+        <h3>Amigos:</h3>
+        <p class="inju">Vamos en peregrinación a ver a Nuestra Señora en el Santuario del Pueblito. Queremos ir con
+          espíritu de oración
+          para pedirle que nos lleve más cerca de Dios y enriquezca nuestras vidas. </p>
+        <p class="inju">Una peregrinación puede cambiar el rumbo de nuestras vidas. Si tenemos alguna petición, alguien
+          que queremos en
+          comendar, algún sufrimiento que ofrecer o simplemente dar gracias por algun bien queremos poner ésto ante Dios
+          a
+          traves de la devoción a Santa María del Pueblito.</p>
+        <p class="inju">"Santa María, Madre de Dios, ruega por nosotros pecadores, ahora y en la hora de nuestra muerte.
+          Amén"</p>
 
+
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Rosario</h2> <br>
+      <h3>Padre Nuestro</h3>
+      <p></p>
+      <p>Padre nuestro que estás en el cielo, </p>
+      <p>antificado sea tu Nombre;</p>
+      <p>venga a nosotros tu Reino;</p>
+      <p>hágase tu voluntad </p>
+      <p>en la tierra como en el cielo.</p>
+      <p>Danos hoy </p>
+      <p>nuestro pan de cada día;</p>
+      <p>perdona nuestras ofensas,</p>
+      <p>como también nosotros perdonamos </p>
+      <p>a los que nos ofenden;</p>
+      <p>no nos dejes caer en la tentación,</p>
+      <p>y líbranos del mal. Amén.</p> <br>
+
+      <h3>Ave María</h3>
+      <p></p>
+      <p>Dios te salve, María,</p>
+      <p>llena eres de gracia;</p>
+      <p>el Señor es contigo.</p>
+      <p>Bendita Tú eres</p>
+      <p>entre todas las mujeres,</p>
+      <p>y bendito es el fruto de tu vientre, Jesús.</p>
+      <p>Santa María, Madre de Dios,</p>
+      <p>ruega por nosotros, pecadores,</p>
+      <p>ahora y en la hora de nuestra muerte. Amén</p> <br>
+
+      <h3>Jaculatorias</h3>
+      <h4><b>Gloria</b></h4>
+      <p>Gloria al Padre,</p>
+      <p>al Hijo y al Espíritu Santo,</p>
+      <p>como era en un principio, ahora y siempre y </p>
+      <p>por los siglos de los siglos. Amén.</p>
+      <h4><b>Oración de Fátima</b></h4>
+      <p> </p>
+      <p> </p>
+      <p>Oh Jesús mío, perdona nuestros pecados, </p>
+      <p>líbranos del fuego del infierno, </p>
+      <p>lleva al cielo a todas las almas, </p>
+      <p>especialmente a las más necesitadas</p>
+      <p>de tu misericordia.</p> <br>
+
+      <h3>Dios te Salve </h3>
+      <p>Dios te Salve, Reina y Madre de misericordia, </p>
+      <p>vida, dulzura y esperanza nuestra, Dios te salve. </p>
+      <p>A ti llamamos los desterrados hijos de Eva;</p>
+      <p>a ti suspiramos, gimiendo y llorando,</p>
+      <p>en este valle de lágrimas.</p>
+      <p>Ea, pues, Señora, abogada nuestra, </p>
+      <p>vuelve a nosotros esos tus ojos misericordiosos,</p>
+      <p>y, después de este destierro, </p>
+      <p>muéstranos a Jesús, fruto bendito de tu vientre.</p>
+      <p>¡Oh clementísima, oh piadosa, </p>
+      <p>oh dulce Virgen María!</p><br>
+
+      <h3>Letanías</h3>
+      <p>Señor, ten piedad </p>
+      <p>Cristo, ten piedad</p>
+      <p>Señor, ten piedad.</p>
+      <p>Cristo, óyenos.</p>
+      <p>Cristo, escúchanos.</p><br>
+      <p></p>
+      <p>Dios, Padre celestial,</p>
+      <p><b>ten piedad de nosotros.</b></p><br>
+      <p></p>
+      <p>Dios, Hijo, Redentor del mundo,</p>
+      <p>Dios, Espíritu Santo,</p>
+      <p>Santísima Trinidad, un solo Dios,</p><br>
+      <p></p>
+      <p>Santa María,</p>
+      <p><b>ruega por nosotros.</b></p>
+      <p>Santa Madre de Dios,</p>
+      <p>Santa Virgen de las Vírgenes,</p>
+      <p>Madre de Cristo,</p>
+      <p>Madre de la Iglesia,</p>
+      <p>Madre de la misericordia,</p>
+      <p>Madre de la divina gracia,</p>
+      <p>Madre de la esperanza,</p>
+      <p>Madre purísima,</p>
+      <p>Madre castísima,</p>
+      <p>Madre siempre virgen,</p>
+      <p>Madre inmaculada,</p>
+      <p>Madre amable,</p>
+      <p>Madre admirable,</p>
+      <p>Madre del buen consejo,</p>
+      <p>Madre del Creador,</p>
+      <p>Madre del Salvador,</p>
+      <p>Virgen prudentísima,</p>
+      <p>Virgen digna de veneración,</p>
+      <p>Virgen digna de alabanza,</p>
+      <p>Virgen poderosa,</p>
+      <p>Virgen clemente,</p>
+      <p>Virgen fiel,</p>
+      <p>Espejo de justicia,</p>
+      <p>Trono de la sabiduría,</p>
+      <p>Causa de nuestra alegría,</p>
+      <p>Vaso espiritual,</p>
+      <p>Vaso digno de honor,</p>
+      <p>Vaso de insigne devoción,</p>
+      <p>Rosa mística,</p>
+      <p>Torre de David,</p>
+      <p>Torre de marfil,</p>
+      <p>Casa de oro,</p>
+      <p>Arca de la Alianza,</p>
+      <p>Puerta del cielo,</p>
+      <p>Estrella de la mañana,</p>
+      <p>Salud de los enfermos,</p>
+      <p>Refugio de los pecadores,</p>
+      <p>Consuelo de los migrantes,</p>
+      <p>Consoladora de los afligidos,</p>
+      <p>Auxilio de los cristianos,</p>
+      <p>Reina de los Ángeles,</p>
+      <p>Reina de los Patriarcas,</p>
+      <p>Reina de los Profetas,</p>
+      <p>Reina de los Apóstoles,</p>
+      <p>Reina de los Mártires,</p>
+      <p>Reina de los Confesores,</p>
+      <p>Reina de las Vírgenes,</p>
+      <p>Reina de todos los Santos,</p>
+      <p>Reina concebida sin pecado original,</p>
+      <p>Reina asunta a los Cielos,</p>
+      <p>Reina del Santísimo Rosario,</p>
+      <p>Reina de la familia,</p>
+      <p>Reina de la paz.</p> <br>
+      <p></p>
+      <p>Cordero de Dios, que quitas el pecado del mundo,</p>
+      <p><b>perdónanos, Señor.</b></p><br>
+      <p></p>
+      <p>Cordero de Dios, que quitas el pecado del mundo,</p>
+      <p><b>escúchanos, Señor.</b></p><br>
+      <p></p>
+      <p>Cordero de Dios, que quitas el pecado del mundo,</p>
+      <p><b>misericordia de nosotros.</b> </p><br>
+      <p></p>
+      <p>Ruega por nosotros, Santa Madre de Dios.</p>
+      <p><b> Para que seamos dignos de las promesas de Cristo.</b> </p><br>
 
     </div>
+
+    <div class="container">
+      <h2>Coronilla de la Misericordia</h2>
+
+      <p>+Al Inicio se reza</p>
+      <ol>
+        <li>La señal de la Cruz</li>
+        <li>Padre Nuestro</li>
+        <li>Ave María</li>
+        <li>Credo</li>
+      </ol>
+      <h3>Credo</h3>
+      <p>Creo en Dios, Padre Todopoderoso,</p>
+      <p>Creador del cielo y de la tierra.</p>
+      <p>Creo en Jesucristo, su único Hijo,</p>
+      <p>Nuestro Señor,</p>
+      <p>Que fue concebido por obra y gracia del Espíritu Santo,</p>
+      <p>nació de Santa María Virgen, </p>
+      <p>padeció bajo el poder de Poncio Pilato, </p>
+      <p>fue crucificado, muerto y sepultado, </p>
+      <p>descendió a los infiernos, </p>
+      <p>al tercer día resucitó de entre los muertos, </p>
+      <p>subió a los cielos y está sentado a la derecha de Dios,</p>
+      <p>Padre todopoderoso. Desde allí ha de venir</p>
+      <p>a juzgar a vivos y muertos.</p>
+
+      <p>Creo en el Espíritu Santo,</p>
+      <p>la santa Iglesia católica, </p>
+      <p>la comunión de los santos,</p>
+      <p>el perdón de los pecados, </p>
+      <p>la resurrección de la carne</p>
+      <p>y la vida eterna.</p>
+      <p>Amén</p>
+
+      <h4>+En la cuenta grande se reza:</h4>
+
+      <p>Padre Eterno,</p>
+      <p>Te ofrezco</p>
+      <p>el Cuerpo, la Sangre,</p>
+      <p>el Alma y la Divinidad</p>
+      <p>de Tu amadísimo Hijo,</p>
+      <p>Nuestro Señor Jesucristo,</p>
+      <p>como propiciación</p>
+      <p>de nuestros pecados</p>
+      <p>y los del mundo entero.</p>
+
+
+
+      <h4>+En la cuenta chica se reza:</h4>
+      <p>Por Su dolorosa Pasión, </p>
+      <p>ten misericordia de nosotros</p>
+      <p>y del mundo entero.</p>
+
+      <h4>+Invocación final</h4>
+      <p>Santo Dios,</p>
+      <p>Santo Fuerte,</p>
+      <p>Santo Inmortal,</p>
+      <p>ten misericordia de nosotros</p>
+      <p>y del mundo entero.</p>
+    </div>
+
+
+    <div class="container">
+      <h2>Oraciones </h2>
+      <h3>Oración para reproducir la imagen de Dios en nuestras almas</h3>
+      <p>Yo te saludo, te adoro y te amo;</p>
+      <p>Oh rostro adorable de mi amado Jesús </p>
+      <p>como la estampa noble de la Divinidad! </p>
+      <p>Completamente entregándote mi alma a Ti,</p>
+      <p>yo humildísimamente te ruego que imprimas</p>
+      <p>este sello sobre todos nosotros, </p>
+      <p>para que la imagen de Dios </p>
+      <p>pueda ser una vez mas reproducida por</p>
+      <p>su impresión en nuestras almas.</p>
+      <p>Amén</p><br>
+    </div>
+
+
+    <div class="container">
+      <h2>Canto</h2>
+      <h3>Santa María del Camino</h3>
+      <p>Mientras recorres la vida</p>
+      <p>tú nunca solo estás,</p>
+      <p>contigo por el camino</p>
+      <p>Santa María va.</p>
+      <p></p>
+      <p><b>Ven con nosotros a caminar</p>
+      <p>Santa María, ven.</b></p>
+      <p></p>
+      <p>Aunque te digan algunos</p>
+      <p>que nada puede cambiar,</p>
+      <p>lucha por un mundo nuevo,</p>
+      <p>lucha por la verdad.</p>
+      <p></p>
+      <p><b>Ven con nosotros a caminar</p>
+      <p>Santa María, ven.</b></p>
+      <p></p>
+      <p>Aunque parezcan tus pasos</p>
+      <p>inútil caminar,</p>
+      <p>tú vas haciendo caminos</p>
+      <p>otros los seguirán.</p>
+      <p></p>
+      <p><b>Ven con nosotros a caminar</p>
+      <p>Santa María, ven.</b></p><br>
+      <p></p>
+
+
+      <h3>Oh! Maria Madre Mia</h3>
+      <p>Oh, Maria madre mia</p>
+      <p>Oh, consuelo del mortal</p>
+      <p>Amparadme y llevadme</p>
+      <p>A la patria celestial</p>
+      <p>(A la patria celestial)</p>
+      <p></p>
+      <p>Salve jubilo del cielo</p>
+      <p>Del excelso, dulce y mar</p>
+      <p>Salve hechizo de este suelo</p>
+      <p>Triunfadora de satán</p>
+      <p>(Triunfadora de satán)</p>
+      <p></p>
+      <p>Quien a ti ferviente aclama</p>
+      <p>Halla alivio en el pesar</p>
+      <p>Pues tu nombre luz derrama</p>
+      <p>Gozo y bálsamo sin par</p>
+      <p>(Gozo y bálsamo sin par)</p>
+      <p></p>
+      <p>Pues te llamo con fe viva</p>
+      <p>Muestra oh, Padre, tu bondad</p>
+      <p>A mí vuelve compasiva</p>
+      <p>Eso ojos de piedad</p>
+      <p></p>
+      <p>Jardiñero de dulzura</p>
+      <p>Que en mi pecho de asedor</p>
+      <p>En él broten flores puras</p>
+      <p>Frutos de tu santo amor</p>
+      <p>(Frutos de tu santo amor)</p>
+      <p></p>
+      <p>Hijo fiel quisiera amarte</p>
+      <p>Y por ti sólo vivir</p>
+      <p>Y por premio de ensalzarte</p>
+      <p>Ensalzándote morir</p>
+      <p>(Ensalzándote morir)</p>
+
+      <p></p>
+      <p>Del eterno las riquezas</p>
+      <p>Por ti logré disfrutar</p>
+      <p>Y contigo las finezas</p>
+      <p>Mil y mil siglos cantar</p>
+      <p>(Mil y mil siglos cantar...) </p>
+      <p></p>
+    </div>
   </div>
-
-  <div class="container">
-    <h2>Rosario</h2> <br>
-    <h3>Padre Nuestro</h3>
-    <p></p>
-    <p>Padre nuestro que estás en el cielo, </p>
-    <p>antificado sea tu Nombre;</p>
-    <p>venga a nosotros tu Reino;</p>
-    <p>hágase tu voluntad </p>
-    <p>en la tierra como en el cielo.</p>
-    <p>Danos hoy </p>
-    <p>nuestro pan de cada día;</p>
-    <p>perdona nuestras ofensas,</p>
-    <p>como también nosotros perdonamos </p>
-    <p>a los que nos ofenden;</p>
-    <p>no nos dejes caer en la tentación,</p>
-    <p>y líbranos del mal. Amén.</p> <br>
-
-    <h3>Ave María</h3>
-    <p></p>
-    <p>Dios te salve, María,</p>
-    <p>llena eres de gracia;</p>
-    <p>el Señor es contigo.</p>
-    <p>Bendita Tú eres</p>
-    <p>entre todas las mujeres,</p>
-    <p>y bendito es el fruto de tu vientre, Jesús.</p>
-    <p>Santa María, Madre de Dios,</p>
-    <p>ruega por nosotros, pecadores,</p>
-    <p>ahora y en la hora de nuestra muerte. Amén</p> <br>
-
-    <h3>Jaculatorias</h3>
-    <h4><b>Gloria</b></h4>
-    <p>Gloria al Padre,</p>
-    <p>al Hijo y al Espíritu Santo,</p>
-    <p>como era en un principio, ahora y siempre y </p>
-    <p>por los siglos de los siglos. Amén.</p>
-    <h4><b>Oración de Fátima</b></h4>
-    <p> </p>
-    <p> </p>
-    <p>Oh Jesús mío, perdona nuestros pecados, </p>
-    <p>líbranos del fuego del infierno, </p>
-    <p>lleva al cielo a todas las almas, </p>
-    <p>especialmente a las más necesitadas</p>
-    <p>de tu misericordia.</p> <br>
-
-    <h3>Dios te Salve </h3>
-    <p>Dios te Salve, Reina y Madre de misericordia, </p>
-    <p>vida, dulzura y esperanza nuestra, Dios te salve. </p>
-    <p>A ti llamamos los desterrados hijos de Eva;</p>
-    <p>a ti suspiramos, gimiendo y llorando,</p>
-    <p>en este valle de lágrimas.</p>
-    <p>Ea, pues, Señora, abogada nuestra, </p>
-    <p>vuelve a nosotros esos tus ojos misericordiosos,</p>
-    <p>y, después de este destierro, </p>
-    <p>muéstranos a Jesús, fruto bendito de tu vientre.</p>
-    <p>¡Oh clementísima, oh piadosa, </p>
-    <p>oh dulce Virgen María!</p><br>
-
-    <h3>Letanías</h3>
-    <p>Señor, ten piedad </p>
-    <p>Cristo, ten piedad</p>
-    <p>Señor, ten piedad.</p>
-    <p>Cristo, óyenos.</p>
-    <p>Cristo, escúchanos.</p><br>
-    <p></p>
-    <p>Dios, Padre celestial,</p>
-    <p><b>ten piedad de nosotros.</b></p><br>
-    <p></p>
-    <p>Dios, Hijo, Redentor del mundo,</p>
-    <p>Dios, Espíritu Santo,</p>
-    <p>Santísima Trinidad, un solo Dios,</p><br>
-    <p></p>
-    <p>Santa María,</p>
-    <p><b>ruega por nosotros.</b></p>
-    <p>Santa Madre de Dios,</p>
-    <p>Santa Virgen de las Vírgenes,</p>
-    <p>Madre de Cristo,</p>
-    <p>Madre de la Iglesia,</p>
-    <p>Madre de la misericordia,</p>
-    <p>Madre de la divina gracia,</p>
-    <p>Madre de la esperanza,</p>
-    <p>Madre purísima,</p>
-    <p>Madre castísima,</p>
-    <p>Madre siempre virgen,</p>
-    <p>Madre inmaculada,</p>
-    <p>Madre amable,</p>
-    <p>Madre admirable,</p>
-    <p>Madre del buen consejo,</p>
-    <p>Madre del Creador,</p>
-    <p>Madre del Salvador,</p>
-    <p>Virgen prudentísima,</p>
-    <p>Virgen digna de veneración,</p>
-    <p>Virgen digna de alabanza,</p>
-    <p>Virgen poderosa,</p>
-    <p>Virgen clemente,</p>
-    <p>Virgen fiel,</p>
-    <p>Espejo de justicia,</p>
-    <p>Trono de la sabiduría,</p>
-    <p>Causa de nuestra alegría,</p>
-    <p>Vaso espiritual,</p>
-    <p>Vaso digno de honor,</p>
-    <p>Vaso de insigne devoción,</p>
-    <p>Rosa mística,</p>
-    <p>Torre de David,</p>
-    <p>Torre de marfil,</p>
-    <p>Casa de oro,</p>
-    <p>Arca de la Alianza,</p>
-    <p>Puerta del cielo,</p>
-    <p>Estrella de la mañana,</p>
-    <p>Salud de los enfermos,</p>
-    <p>Refugio de los pecadores,</p>
-    <p>Consuelo de los migrantes,</p>
-    <p>Consoladora de los afligidos,</p>
-    <p>Auxilio de los cristianos,</p>
-    <p>Reina de los Ángeles,</p>
-    <p>Reina de los Patriarcas,</p>
-    <p>Reina de los Profetas,</p>
-    <p>Reina de los Apóstoles,</p>
-    <p>Reina de los Mártires,</p>
-    <p>Reina de los Confesores,</p>
-    <p>Reina de las Vírgenes,</p>
-    <p>Reina de todos los Santos,</p>
-    <p>Reina concebida sin pecado original,</p>
-    <p>Reina asunta a los Cielos,</p>
-    <p>Reina del Santísimo Rosario,</p>
-    <p>Reina de la familia,</p>
-    <p>Reina de la paz.</p> <br>
-    <p></p>
-    <p>Cordero de Dios, que quitas el pecado del mundo,</p>
-    <p><b>perdónanos, Señor.</b></p><br>
-    <p></p>
-    <p>Cordero de Dios, que quitas el pecado del mundo,</p>
-    <p><b>escúchanos, Señor.</b></p><br>
-    <p></p>
-    <p>Cordero de Dios, que quitas el pecado del mundo,</p>
-    <p><b>misericordia de nosotros.</b> </p><br>
-    <p></p>
-    <p>Ruega por nosotros, Santa Madre de Dios.</p>
-    <p><b> Para que seamos dignos de las promesas de Cristo.</b> </p><br>
-
   </div>
-
-  <div class="container">
-    <h2>Oraciones </h2>
-    <h3>Oración para reproducir la imagen de Dios en nuestras almas</h3>
-    <p>Yo te saludo, te adoro y te amo;</p>
-    <p>Oh rostro adorable de mi amado Jesús </p>
-    <p>como la estampa noble de la Divinidad! </p>
-    <p>Completamente entregándote mi alma a Ti,</p>
-    <p>yo humildísimamente te ruego que imprimas</p>
-    <p>este sello sobre todos nosotros, </p>
-    <p>para que la imagen de Dios </p>
-    <p>pueda ser una vez mas reproducida por</p>
-    <p>su impresión en nuestras almas.</p>
-    <p>Amén</p><br>
-  </div>
-
-
-  <div class="container">
-    <h2>Canto</h2>
-    <h3>Santa María del Camino</h3>
-    <p>Mientras recorres la vida</p>
-    <p>tú nunca solo estás,</p>
-    <p>contigo por el camino</p>
-    <p>Santa María va.</p>
-    <p></p>
-    <p><b>Ven con nosotros a caminar</p>
-    <p>Santa María, ven.</b></p>
-    <p></p>
-    <p>Aunque te digan algunos</p>
-    <p>que nada puede cambiar,</p>
-    <p>lucha por un mundo nuevo,</p>
-    <p>lucha por la verdad.</p>
-    <p></p>
-    <p><b>Ven con nosotros a caminar</p>
-    <p>Santa María, ven.</b></p>
-    <p></p>
-    <p>Aunque parezcan tus pasos</p>
-    <p>inútil caminar,</p>
-    <p>tú vas haciendo caminos</p>
-    <p>otros los seguirán.</p>
-    <p></p>
-    <p><b>Ven con nosotros a caminar</p>
-    <p>Santa María, ven.</b></p><br>
-    <p></p>
-  </div></div></div>
 
   <script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
     crossorigin="anonymous"></script> <!-- Latest compiled and minified JavaScript -->
