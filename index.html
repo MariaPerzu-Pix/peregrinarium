@@ -12,20 +12,27 @@
 
 <body>
   <style>
-    .navbar-brand{
-    font-size: 1.5em;
+    .navbar{
+    font-size: 1.7em;
     }
-    .nav{
-      font-size: 1.5em;
+    .container{
+      padding: 4.5em;
     }
     h2{
       font-size:2.5em;
+      padding-top: 0.7;
     }
     h3{
       font-size:2em;
+      padding-top: 0.5;
+    }
+    h4{
+      font-size:1.5em;
+      padding-top: 0.3;
     }
     p{
       font-size: 1.5em;
+      padding-top: 0.1;
     }
     
 
@@ -34,6 +41,8 @@
   <!-- DOCUMENTATION NAVBAR -->
 
   <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+    <div class ="row">
+      <div class = "col-xs-12 col-sm-12">
 
     <!-- Inside of a Container -->
     <div class="container-fluid">
@@ -52,6 +61,8 @@
         </button>
         <a class="navbar-brand" href="#">Guía</a>
       </div>
+
+      
 
       <!-- Anything inside of collapse navbar-collapse goes into the "hamburger" -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -73,12 +84,15 @@
         </ul>
 
       </div><!-- /.navbar-collapse -->
+    </div> <!-- <div class = "col-xs-12 col-sm-12"> -->
+  </div><!-- <div class = "row"> -->
     </div><!-- /.container-fluid -->
   </nav>
 
 
   <!-- OTHER STUFF ON THE PAGE -->
-
+  <div class ="row">
+  <div class = "col-xs-12 col-sm-12">
   <div class="container">
     <div class="jumbotron">
       <h2>Mini-peregrinación Enero 2022</h2>
@@ -88,7 +102,7 @@
       <p>Una peregrinación puede cambiar el rumbo de nuestras vidas. Si tenemos alguna petición, alguien que queremos en
         comendar, algún sufrimiento que ofrecer o simplemente dar gracias por algun bien queremos poner ésto ante Dios a
         traves de la devoción a Santa María del Pueblito.</p>
-      <p>"Santa María, Madre de Dios, ruega por nosotros pecadores, ahora y en la hora de nuestra muerte. Amén"</p>
+      <p class="lead">"Santa María, Madre de Dios, ruega por nosotros pecadores, ahora y en la hora de nuestra muerte. Amén"</p>
 
 
     </div>
@@ -124,12 +138,12 @@
     <p>ahora y en la hora de nuestra muerte. Amén</p> <br>
 
     <h3>Jaculatorias</h3>
-    <h4>Gloria</h4>
+    <h4><b>Gloria</b></h4>
     <p>Gloria al Padre,</p>
     <p>al Hijo y al Espíritu Santo,</p>
     <p>como era en un principio, ahora y siempre y </p>
     <p>por los siglos de los siglos. Amén.</p>
-    <h4>Oración de Fátima</h4>
+    <h4><b>Oración de Fátima</b></h4>
     <p> </p>
     <p> </p>
     <p>Oh Jesús mío, perdona nuestros pecados, </p>
@@ -279,6 +293,8 @@
     <p>Santa María, ven.</b></p><br>
     <p></p>
   </div>
+  </div><!--  <div class ="row">     -->
+  </div> <!-- <div class = "col-xs-12 col-sm-12">-->
 
   <script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
     crossorigin="anonymous"></script> <!-- Latest compiled and minified JavaScript -->
