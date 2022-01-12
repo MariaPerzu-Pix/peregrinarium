@@ -12,12 +12,18 @@
 
 <body>
   <style>
-    @media (min-width: 992px) {
+    @media (min-width: 700px) {
+    .container-fluid{
+      padding: 1.0em;
+    }
     .navbar{
-    font-size: 2.5em;
+    font-size: 1.5em;
     }
     .container{
-      padding: 2.5em;
+      padding: 1.0em;
+    }
+    .dropdown{
+      font-size: 1.8em;
     }
     h2{
       font-size:3.5em;
@@ -39,16 +45,19 @@
     }
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 699px) {
     .navbar{
-    font-size: 4.5em;
+    font-size: 4.0em;
+    }
+    .container-fluid{
+      width: 100%;
     }
     .container{
-      padding: 2.5em;
+      padding-top: 0.5em;
     }
     h2{
       font-size:5.5em;
-      padding-top: 0.7em;
+      padding-top: 0.2em;
       font-weight: bold;
     }
     h3{
@@ -57,12 +66,16 @@
       font-weight: bold;
     }
     h4{
-      font-size:3.2em;
+      font-size:3.7em;
       padding-top: 0.3em;
     }
     p{
-      font-size: 2.4em;
+      font-size: 3em;
       padding-top: 0.1em;
+    }
+    #jum{
+      background-color: rgb(186, 186, 192);
+      margin: 1.5em;
     }
   }
   
@@ -113,7 +126,7 @@
 
         <!-- Stuff on the Right -->
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Link</a></li>
+          <li><a href="#">Inicio</a></li>
         </ul>
 
       </div><!-- /.navbar-collapse -->
@@ -126,21 +139,20 @@
   <!-- OTHER STUFF ON THE PAGE -->
   <div class ="row">
   <div class = "col-xs-12 col-sm-12">
-  <div class="container">
-    <div class="jumbotron">
+  <div class="container" id="jum">
       <h2>Mini-peregrinación Enero 2022</h2>
       <h3>Amigos:</h3>
-      <p>Vamos en peregrinación a ver a Nuestra Señora en el Santuario del Pueblito. Queremos ir con espíritu de oración
+      <p class="inju">Vamos en peregrinación a ver a Nuestra Señora en el Santuario del Pueblito. Queremos ir con espíritu de oración
         para pedirle que nos lleve más cerca de Dios y enriquezca nuestras vidas. </p>
-      <p>Una peregrinación puede cambiar el rumbo de nuestras vidas. Si tenemos alguna petición, alguien que queremos en
+      <p class="inju">Una peregrinación puede cambiar el rumbo de nuestras vidas. Si tenemos alguna petición, alguien que queremos en
         comendar, algún sufrimiento que ofrecer o simplemente dar gracias por algun bien queremos poner ésto ante Dios a
         traves de la devoción a Santa María del Pueblito.</p>
-      <p>"Snta María, Madre de Dios, ruega por nosotros pecadores, ahora y en la hora de nuestra muerte. Amén"</p>
+      <p class="inju">"Santa María, Madre de Dios, ruega por nosotros pecadores, ahora y en la hora de nuestra muerte. Amén"</p>
 
 
     </div>
-
   </div>
+
   <div class="container">
     <h2>Rosario</h2> <br>
     <h3>Padre Nuestro</h3>
